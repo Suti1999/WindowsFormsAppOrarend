@@ -10,7 +10,6 @@ namespace WindowsFormsAppOrarend
     {
         public static FormLogin formLogin = null;
         public static FormOrarend formOrarend = null;
-        public static int UserId;
         public static Database db = new Database();
 
         static void Main()

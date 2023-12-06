@@ -49,7 +49,7 @@ namespace WindowsFormsAppOrarend
             }
         }
 
-        /
+        
         public void kapcsolatNyitas()
         {
             if (connection.State != System.Data.ConnectionState.Open)
@@ -62,7 +62,7 @@ namespace WindowsFormsAppOrarend
         {
             int userid = -1;
             kapcsolatNyitas();
-            command.CommandText = "SELECT tanarok.nev, tanarok.jelszo FROM orarend WHERE tanarok.nev=@nev";
+            command.CommandText = "SELECT tanarid, tanarnev, jelszo FROM tanarok WHERE tanarnev=@nev";
             command.Parameters.Clear();
             command.Parameters.AddWithValue("@nev", nev);
             MySqlDataReader reader = command.ExecuteReader();

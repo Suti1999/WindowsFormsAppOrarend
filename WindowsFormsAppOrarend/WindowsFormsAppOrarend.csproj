@@ -105,17 +105,47 @@
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormModositas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModositas.Designer.cs">
+      <DependentUpon>FormModositas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormOrarend.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormOrarend.Designer.cs">
       <DependentUpon>FormOrarend.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTorles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTorles.Designer.cs">
+      <DependentUpon>FormTorles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUjtantargy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUjtantargy.Designer.cs">
+      <DependentUpon>FormUjtantargy.cs</DependentUpon>
+    </Compile>
     <Compile Include="Orarend.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModositas.resx">
+      <DependentUpon>FormModositas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrarend.resx">
+      <DependentUpon>FormOrarend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTorles.resx">
+      <DependentUpon>FormTorles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUjtantargy.resx">
+      <DependentUpon>FormUjtantargy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

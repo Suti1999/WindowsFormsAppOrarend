@@ -12,9 +12,32 @@ namespace WindowsFormsAppOrarend
 {
     public partial class FormOrarend : Form
     {
-        public FormOrarend()
+        string mod = null;
+        FormOrarend kivalasztottOra = null;
+        public FormOrarend(string mod)
         {
             InitializeComponent();
+            this.mod = mod;
         }
+
+        public FormOrarend()
+        {
+        }
+
+        private void FormOrarend_Load(object sender, EventArgs e)
+        {
+            if (Program.formOrarend.listBox_orarend.SelectedIndex >= 0)
+            {
+                kivalasztottOra = (FormOrarend)Program.formOrarend.listBox_orarend.SelectedItem;
+            }
+            switch (this.mod)
+            {
+                case "új":
+                        this.Text = "Új tantárgy felvitele";
+                        újTantárgyToolStripMenuItem_ujtantargy.Text = "Új tantárgy felvitele";
+                    break;
+            }
+        }
+    
     }
 }
